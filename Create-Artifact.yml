@@ -9,7 +9,7 @@ pool:
 steps:
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Build.SourcesDirectory)'
+    SourceFolder: '$(Build.SourcesDirectory)/dist'
     Contents: |
       index.htm
       404.htm
