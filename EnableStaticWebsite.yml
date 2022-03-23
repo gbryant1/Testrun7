@@ -1,0 +1,15 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+trigger:
+- "*"
+pool:
+  vmImage: ubuntu-latest
+steps:
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'testrun5-conn'
+    scriptType: 'pscore'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az storage blob service-properties update --account-name exku2hinpjw36qa --account-key x9vQlX1jvHkjABAsEFAnYBfz+FVDqLqEA0X7dZWbTMPnzqtjoKz0cCRzccIJPI/rKhAyUMFbHi/edteZtwbBqg== --static-website --404-document 404.htm --index-document index.htm --verbose'

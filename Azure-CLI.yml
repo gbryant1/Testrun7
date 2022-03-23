@@ -1,0 +1,9 @@
+steps:
+- task: AzureCLI@2
+  displayName: 'Azure CLI '
+  inputs:
+    azureSubscription: 'testrun5-conn'
+    scriptType: ps
+    scriptLocation: inlineScript
+    inlineScript: 'az storage blob upload-batch --account-name exku2hinpjw36qa --account-key x9vQlX1jvHkjABAsEFAnYBfz+FVDqLqEA0X7dZWbTMPnzqtjoKz0cCRzccIJPI/rKhAyUMFbHi/edteZtwbBqg== --destination ''$web'' --source ./'
+    workingDirectory: '$(Build.DefaultWorkingDirectory)/$(Build.BuildId) '

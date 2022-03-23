@@ -1,0 +1,7 @@
+steps:
+- task: ExtractFiles@1
+  displayName: 'Extract files '
+  inputs:
+    archiveFilePatterns: '**/$(Build.BuildId).zip'
+    destinationFolder: '$(Build.DefaultWorkingDirectory)/$(Build.BuildId)'
+    cleanDestinationFolder: false
