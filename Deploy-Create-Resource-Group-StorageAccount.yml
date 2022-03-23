@@ -14,7 +14,7 @@ stages:
         - task: AzureResourceManagerTemplateDeployment@3
           inputs:
             deploymentScope: 'Resource Group'
-            azureResourceManagerConnection: 'testrun5-conn'
+            azureResourceManagerConnection: 'testrun7-conn'
             subscriptionId: 'e3133bc0-5aab-42bd-b381-5860fe695537'
             action: 'Create Or Update Resource Group'
             resourceGroupName: 'testrun7'
