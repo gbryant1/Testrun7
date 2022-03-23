@@ -9,7 +9,7 @@ pool:
 steps:
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'testrun5-conn'
+    azureSubscription: 'testrun7-conn'
     scriptType: 'pscore'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az storage blob service-properties update --account-name exku2hinpjw36qa --account-key x9vQlX1jvHkjABAsEFAnYBfz+FVDqLqEA0X7dZWbTMPnzqtjoKz0cCRzccIJPI/rKhAyUMFbHi/edteZtwbBqg== --static-website --404-document 404.htm --index-document index.htm --verbose'
+    inlineScript: 'az storage blob service-properties update --account-name gborgwugclgpwelvyq --account-key cFjbbMdw3xa6LJRMZbm5Zk9rtbflO5oqVG9K9fgg4ILtEirzHxRIlI/8KA0jAGtk2I45DlDzsrXFcCXqrO1zwQ== --static-website --404-document 404.htm --index-document index.htm --verbose'
