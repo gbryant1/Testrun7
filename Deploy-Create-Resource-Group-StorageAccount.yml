@@ -17,7 +17,7 @@ stages:
             azureResourceManagerConnection: 'testrun5-conn'
             subscriptionId: 'e3133bc0-5aab-42bd-b381-5860fe695537'
             action: 'Create Or Update Resource Group'
-            resourceGroupName: 'testrun5'
+            resourceGroupName: 'testrun7'
             location: 'West US'
             templateLocation: 'Linked artifact'
             csmFile: '$(Build.SourcesDirectory)/StorageAccount/azuredeploy.json'
