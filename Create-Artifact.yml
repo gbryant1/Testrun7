@@ -11,7 +11,7 @@ steps:
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
     Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)/drop'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.BinariesDirectory)/'
@@ -21,6 +21,6 @@ steps:
     replaceExistingArchive: true
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/drop'
     ArtifactName: 'drop'
     publishLocation: 'Container'
