@@ -20,7 +20,7 @@ steps:
     rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
     includeRootFolder: true
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    archiveFile: '$(Build.BuildId).zip'
     replaceExistingArchive: true
     verbose: true
 - task: PublishBuildArtifacts@1
